@@ -1,0 +1,32 @@
+.footer{
+  height: 200px;
+  color:white;
+  background-color: #514D4D;
+  font-family: 'Avenir Next';
+  display: flex;
+  .copyright{
+    font-size: .71em;
+    margin-left:128px;
+    margin-top:50px;
+    width:180px;
+    text-align: left;
+    img{
+      width:140px;
+    }
+    div{
+      margin-top:13px;
+      line-height: 16px;
+    }
+  }
+  .links{
+    display: flex;
+    padding-top:83px;
+    margin-left: auto;
+    margin-right:187px;
+    .link{
+      font-weight: bold;
+      font-size: 1.07em;
+      margin-left:46.5px;
+    }
+  }
+}

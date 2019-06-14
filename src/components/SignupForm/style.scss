@@ -1,0 +1,58 @@
+.signup-form{
+  text-align: left;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 38px 60px 60px 67px;
+  width: 410px;
+  height: 420px;
+  right:110px;
+  top: 170px;
+  font-family: 'Avenir Next';
+  box-shadow: 3px 3px rgba(0,0,0,0.05);
+  div:first-child{
+    
+    font-size:1.37em;
+    font-weight: bold;
+  }
+  div:nth-child(2){
+    margin-top: -4px;
+    font-size:.77em;
+    font-weight: 300;
+  }
+  div:nth-child(3){     
+    margin-top:22px;   
+  }
+  div:nth-child(5){     
+    margin-top:19px;   
+  }
+  div:nth-child(7){     
+    margin-top:19px;   
+  }
+  .submit{     
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    height: 48px;
+    margin-right: 9px;
+    text-align: center;
+    margin-top:38px;   
+    background-color: #74C145;
+    color: white;
+    span{
+      margin-top:13px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+  }
+  .submit:hover{
+    opacity: 0.5;
+  }
+  .label{
+    font-size:12.8px;
+    font-weight: bold;
+  }
+
+}
