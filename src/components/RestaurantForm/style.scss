@@ -1,0 +1,81 @@
+.restaurant-form {
+  text-align: left;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 60px 60px 67px;
+  width: 530px;
+  height: 820px;
+  left: 165px;
+  top: 170px;
+  font-family: 'Avenir Next';
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
+  color: #4A4A4A;
+  &-heading {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  &-second-row {
+    margin-top: 45px;
+  }
+
+  &-third-row {
+    margin-top: 8px;
+  }
+
+  &-fourth-row{
+    margin-top: 45px;
+    display: flex;
+  }
+  &-city{
+    width: 40%;
+  }
+  &-state{
+    width: 30%;
+  }
+  &-zipcode{
+    width: 30%;
+  }
+  &-number{
+    margin-top: 28px;
+  }
+  &-cuisine{
+    margin-top: 27px;
+  }
+  &-url{
+    margin-top: 28px;
+  }
+  &-facebook{
+    margin-top: 26px;
+  }
+  .submit {
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    height: 48px;
+    margin-right: 9px;
+    text-align: center;
+    margin-top: 38px;
+    background-color: #74C145;
+    color: white;
+
+    span {
+      margin-top: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+  }
+
+  .submit:hover {
+    opacity: 0.5;
+  }
+
+  .label {
+    font-size: 12.8px;
+    font-weight: bold;
+  }
+
+}
