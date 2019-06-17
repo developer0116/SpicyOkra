@@ -41,7 +41,6 @@
       padding-left: 0px;
       padding-right: 46px;
       text-align: left;
-      overflow: auto;
 
       .experiences-timeline {
         margin-left: 46px;
@@ -83,87 +82,110 @@
       }
 
       &-back {
-        height: 420px;
-        margin-left: 76px;
-        margin-top: 50px;
-        overflow: auto;
-        .free-appetizer {
-          padding-right: 10px;
-          width: 70%;
-          text-align: left;
+        height: 470px;
+        background-image: url('../../assets/img/mobile.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 0%;
 
-          &-img {
-            width: 100%;
-            height: 140px;
-          }
+        &-mobile {
+          width: 186px;
+          height: 360px;
+          position: relative;
+          top: 49px;
+          left: 89px;
+          overflow-y: auto;
+          overflow-x: hidden;
 
-          &-content {
-            margin-top: -5px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 12px;
-            background-color: white;
-            border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+          .free-appetizer {
+            text-align: left;
+            padding: 3px;
 
-            .london-bridge-restaurant {
-              border-radius: 5px;
-              border: 1px solid rgb(151, 151, 151);
-              padding: 11px;
-              margin-top: 8px;
-              display: flex;
+            &-img {
+              width: 100%;
+              height: 90px;
+            }
 
-              &-logo {
-                width: 2.0em;
-                height: 2.0em;
-              }
+            &-content {
+              padding: 5px;
+              background-color: white;
+              border-bottom: 1px solid rgba(149, 149, 149, 0.5);
 
-              &-content {
-                margin-right: -30px;
-                width: 100%;
-                margin-left: 11px;
-              }
+              .london-bridge-restaurant {
+                border-radius: 3px;
+                border: 1px solid rgb(151, 151, 151);
+                padding: 5px;
+                margin-top: 8px;
+                display: flex;
 
-              &-heading {
-                font-weight: bolder;
-                font-size: .82em;
-              }
-
-              &-detail {
-                font-size: .71em;
-              }
-
-              &-cook {
-                background-color: white;
-                border: 1px solid #979797;
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                right: -25px;
-                top: 25px;
-                position: relative;
-
-                img {
-                  margin: 5px;
+                &-logo {
+                  width: 1.3em;
+                  height: 1.3em;
                 }
+
+                &-content {
+                  margin-right: -30px;
+                  width: 100%;
+                  margin-left: 3px;
+                }
+
+                &-heading {
+                  font-weight: bolder;
+                  font-size: 9px;
+                }
+
+                &-detail {
+                  font-size: .23em;
+                }
+
+                &-cook {
+                  background-color: white;
+                  border: 1px solid #979797;
+                  border-radius: 50%;
+                  width: 30px;
+                  height: 30px;
+                  right: -20px;
+                  top: 15px;
+                  position: relative;
+
+                  img {
+                    margin: 5px;
+                  }
+                }
+
+                .detail-info {
+                  display: flex;
+
+                  &-img {
+                    width: 8px;
+                    height: 8px;
+                  }
+
+                  &-value {
+                    margin-left: 4px;
+                    font-size: 7px;
+                    font-weight: bold;
+                  }
+                }
+
               }
+            }
+
+            &-heading {
+              font-weight: bolder;
+              font-size: .3em;
 
             }
-          }
 
-          &-heading {
-            font-weight: bolder;
-            font-size: 1.06em;
-
-          }
-
-          &-footer {
-            background-color: white;
-            padding: 20px;
-            padding-top: 22px;
-            padding-bottom: 23px;
-            display: flex;
+            &-footer {
+              background-color: white;
+              padding: 5px;
+              display: flex;
+            }
           }
         }
+
+
       }
 
       &-description {
@@ -215,4 +237,10 @@
       }
     }
   }
+}
+
+.dashboard-button {
+  font-size: 6.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

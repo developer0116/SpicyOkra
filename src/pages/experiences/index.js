@@ -50,107 +50,117 @@ export default class ExperiencesPage extends React.Component {
 								make sure everything looks great!
 							</div>
 							<div className={'review-form-back'}>
-								<div className={'free-appetizer'}>
-									<img className={'free-appetizer-img'} src={Img1} />
+								<div className={'review-form-back-mobile'}>
+									<div className={'free-appetizer'}>
+										<img className={'free-appetizer-img'} src={Img1} />
 
-									<div className={'free-appetizer-content'}>
-										<div className={'free-appetizer-heading'}>Free Appetizer with any Entree</div>
-										<div className={'london-bridge-restaurant'}>
-											<img className={'london-bridge-restaurant-logo'} src={London} />
-											<div className={'london-bridge-restaurant-content'}>
-												<div className={'london-bridge-restaurant-heading'}>
-													London Bridge Restaurant
-												</div>
-												<div className={'london-bridge-restaurant-detail'}>
-													British & Irish Cruisine
-												</div>
-												<div style={{ marginTop: 12, display: 'flex' }}>
-													<div style={{ width: '42%' }}>
-														<div className={'detail-info'}>
-															<img className={'detail-info-img'} src={StarIcon} />
-															<div className={'detail-info-value'}>3.0 (100)</div>
+										<div className={'free-appetizer-content'}>
+											<div className={'free-appetizer-heading'}>
+												Free Appetizer with any Entree
+											</div>
+											<div className={'london-bridge-restaurant'}>
+												<img className={'london-bridge-restaurant-logo'} src={London} />
+												<div className={'london-bridge-restaurant-content'}>
+													<div className={'london-bridge-restaurant-heading'}>
+														London Bridge Restaurant
+													</div>
+													<div className={'london-bridge-restaurant-detail'}>
+														British & Irish Cruisine
+													</div>
+													<div style={{ marginTop: 12, display: 'flex' }}>
+														<div style={{ width: '42%' }}>
+															<div className={'detail-info'}>
+																<img className={'detail-info-img'} src={StarIcon} />
+																<div className={'detail-info-value'}>3.0 (100)</div>
+															</div>
+
+															<div style={{ marginTop: 8 }} className={'detail-info'}>
+																<img className={'detail-info-img'} src={DollarIcon} />
+																<div className={'detail-info-value'}>$$$</div>
+															</div>
 														</div>
-
-														<div style={{ marginTop: 8 }} className={'detail-info'}>
-															<img className={'detail-info-img'} src={DollarIcon} />
-															<div className={'detail-info-value'}>$$$</div>
+														<div>
+															<div className={'detail-info'}>
+																<img className={'detail-info-img'} src={PositionIcon} />
+																<div className={'detail-info-value'}>0.2 m</div>
+															</div>
+															<div style={{ marginTop: 8 }} className={'detail-info'}>
+																<img className={'detail-info-img'} src={ClockIcon} />
+																<div className={'detail-info-value'}>
+																	Closing in 20m
+																</div>
+															</div>
 														</div>
 													</div>
-													<div>
-														<div className={'detail-info'}>
-															<img className={'detail-info-img'} src={PositionIcon} />
-															<div className={'detail-info-value'}>0.2 m</div>
-														</div>
-														<div style={{ marginTop: 8 }} className={'detail-info'}>
-															<img className={'detail-info-img'} src={ClockIcon} />
-															<div className={'detail-info-value'}>Closing in 20m</div>
-														</div>
-													</div>
+												</div>
+												<div className={'london-bridge-restaurant-cook'}>
+													<img src={CookIcon} />
 												</div>
 											</div>
-											<div className={'london-bridge-restaurant-cook'}>
-												<img src={CookIcon} />
+										</div>
+										<div className={'free-appetizer-footer'}>
+											<div className={'half'} style={{ marginRight: 5, width: '50%' }}>
+												<Button type="red">Deactivate this Deal</Button>
 											</div>
-										</div>
-									</div>
-									<div className={'free-appetizer-footer'}>
-										<div className={'half'} style={{ marginRight: 10, width: '50%' }}>
-											<Button type="red">Deactivate this Deal</Button>
-										</div>
-										<div className={'half'} style={{ marginRight: 5, width: '50%' }}>
-											<Button type="green">Re-create Similar Deal</Button>
-										</div>
-									</div>
-								</div>
-								<div className={'free-appetizer'}>
-									<img className={'free-appetizer-img'} src={Img1} />
-
-									<div className={'free-appetizer-content'}>
-										<div className={'free-appetizer-heading'}>Free Appetizer with any Entree</div>
-										<div className={'london-bridge-restaurant'}>
-											<img className={'london-bridge-restaurant-logo'} src={London} />
-											<div className={'london-bridge-restaurant-content'}>
-												<div className={'london-bridge-restaurant-heading'}>
-													London Bridge Restaurant
-												</div>
-												<div className={'london-bridge-restaurant-detail'}>
-													British & Irish Cruisine
-												</div>
-												<div style={{ marginTop: 12, display: 'flex' }}>
-													<div style={{ width: '42%' }}>
-														<div className={'detail-info'}>
-															<img className={'detail-info-img'} src={StarIcon} />
-															<div className={'detail-info-value'}>3.0 (100)</div>
-														</div>
-
-														<div style={{ marginTop: 8 }} className={'detail-info'}>
-															<img className={'detail-info-img'} src={DollarIcon} />
-															<div className={'detail-info-value'}>$$$</div>
-														</div>
-													</div>
-													<div>
-														<div className={'detail-info'}>
-															<img className={'detail-info-img'} src={PositionIcon} />
-															<div className={'detail-info-value'}>0.2 m</div>
-														</div>
-														<div style={{ marginTop: 8 }} className={'detail-info'}>
-															<img className={'detail-info-img'} src={ClockIcon} />
-															<div className={'detail-info-value'}>Closing in 20m</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className={'london-bridge-restaurant-cook'}>
-												<img src={CookIcon} />
+											<div className={'half'} style={{ width: '50%' }}>
+												<Button type="green">Re-create Similar Deal</Button>
 											</div>
 										</div>
 									</div>
-									<div className={'free-appetizer-footer'}>
-										<div className={'half'} style={{ marginRight: 10, width: '50%' }}>
-											<Button type="red">Deactivate this Deal</Button>
+									<div className={'free-appetizer'}>
+										<img className={'free-appetizer-img'} src={Img1} />
+
+										<div className={'free-appetizer-content'}>
+											<div className={'free-appetizer-heading'}>
+												Free Appetizer with any Entree
+											</div>
+											<div className={'london-bridge-restaurant'}>
+												<img className={'london-bridge-restaurant-logo'} src={London} />
+												<div className={'london-bridge-restaurant-content'}>
+													<div className={'london-bridge-restaurant-heading'}>
+														London Bridge Restaurant
+													</div>
+													<div className={'london-bridge-restaurant-detail'}>
+														British & Irish Cruisine
+													</div>
+													<div style={{ marginTop: 12, display: 'flex' }}>
+														<div style={{ width: '42%' }}>
+															<div className={'detail-info'}>
+																<img className={'detail-info-img'} src={StarIcon} />
+																<div className={'detail-info-value'}>3.0 (100)</div>
+															</div>
+
+															<div style={{ marginTop: 8 }} className={'detail-info'}>
+																<img className={'detail-info-img'} src={DollarIcon} />
+																<div className={'detail-info-value'}>$$$</div>
+															</div>
+														</div>
+														<div>
+															<div className={'detail-info'}>
+																<img className={'detail-info-img'} src={PositionIcon} />
+																<div className={'detail-info-value'}>0.2 m</div>
+															</div>
+															<div style={{ marginTop: 8 }} className={'detail-info'}>
+																<img className={'detail-info-img'} src={ClockIcon} />
+																<div className={'detail-info-value'}>
+																	Closing in 20m
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div className={'london-bridge-restaurant-cook'}>
+													<img src={CookIcon} />
+												</div>
+											</div>
 										</div>
-										<div className={'half'} style={{ marginRight: 5, width: '50%' }}>
-											<Button type="green">Re-create Similar Deal</Button>
+										<div className={'free-appetizer-footer'}>
+											<div className={'half'} style={{ marginRight: 5, width: '50%' }}>
+												<Button type="red">Deactivate this Deal</Button>
+											</div>
+											<div className={'half'} style={{ width: '50%' }}>
+												<Button type="green">Re-create Similar Deal</Button>
+											</div>
 										</div>
 									</div>
 								</div>
