@@ -1,8 +1,53 @@
 .navbar {
   background-color: #F6242D;
   color: white;
-  padding-top: 30px;
-  padding-right: 30px;
-  width: 240px;
+  padding-top: 33px;
+  padding-right: 34px;
+  width: 335px;
   height: 100%;
+  font-family: 'Avenir Next';
+  text-align: left;
+
+  &-logo {
+    margin-left: 80px;
+    width: 110px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    margin-top: 32px;
+    padding-right: 15px;
+  }
+
+  &-link {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    div {
+      width: calc(100% - 24px);
+      padding-left: 17px;
+      font-weight: bold;
+      font-size: .92em;
+      margin-top: 0px;
+    }
+  }
+
+  &-link-active {
+    background-color: #C71E1E;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .copyright{
+    color: white;
+    text-align: center;
+    margin-top: 905px;
+    margin-left: 40px;
+    font-size: .7em;
+  }
 }

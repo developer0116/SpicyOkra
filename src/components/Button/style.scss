@@ -1,4 +1,4 @@
-.green-button{
+.submit-button{
   margin: 30px auto;
   font-size: 15px;
   font-weight: bold;  
@@ -9,6 +9,54 @@
   text-align: center;
   color: white;
 }
-.green-button:hover{
+.submit-button:hover{
   background-color: #86D357;
+}
+.dashboard-button{
+  border-radius: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  font-size: .7em;
+  font-weight: bold;
+  background-color: #F6242D;
+  color: white;
+  cursor: pointer;
+}
+.dashboard-button:hover{
+  opacity: 0.5;
+}
+.red{
+  background-color: #F6242D;
+}
+.green{
+  background-color: #74C145;
+}
+.gray{
+  background-color: #4a4a4a;
+  width: 125px;
+  margin-left: auto;
+  font-size: .7em;
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  border-radius: 5px;
+  text-align: right;
+  display: flex;
+  &-img{
+    
+    width: 11px;
+    height: 11px;
+    margin-left: auto;
+    margin-top: 1px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-text{
+    margin-left: auto;
+  }
 }
