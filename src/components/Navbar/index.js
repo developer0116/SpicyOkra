@@ -31,19 +31,26 @@ const Navbar = (props) => {
 	];
 	return (
 		<div className={'navbar'}>
-			<div className={'navbar-logo'}>
-				<img src={Logo} />
+			<div>
+				<div className={'navbar-logo'}>
+					<img src={Logo} />
+				</div>
+				<div className={'navbar-content'}>
+					{links.map((link) => {
+						return (
+							<div
+								className={
+									props.current === link.name ? 'navbar-link navbar-link-active' : 'navbar-link'
+								}
+							>
+								<img src={link.icon} />
+								<div>{link.name}</div>
+							</div>
+						);
+					})}
+				</div>
 			</div>
-			<div className={'navbar-content'}>
-				{links.map((link) => {
-					return (
-						<div className={props.current === link.name ? 'navbar-link navbar-link-active' : 'navbar-link'}>
-							<img src={link.icon} />
-							<div>{link.name}</div>
-						</div>
-					);
-				})}
-			</div>
+
 			<div className={'copyright'}>
 				@ Copyright 2018 SpicyOkra <br />
 				Holdings Inc. All rights reserved.

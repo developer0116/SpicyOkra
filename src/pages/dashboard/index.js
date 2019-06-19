@@ -1,10 +1,9 @@
 import React from 'react';
-import renderHTML from 'react-render-html';
 import Navbar from '../../components/Navbar';
-import UserImg from '../../assets/img/user-img.png';
 import Img1 from '../../assets/img/dashboard-img1.png';
 import Img2 from '../../assets/img/dashboard-img2.png';
 import Img3 from '../../assets/img/dashboard-img3.png';
+import UserImg from '../../assets/img/user-img.png';
 import London from '../../assets/img/dashboard-london-icon.png';
 import StarIcon from '../../assets/img/star-icon.png';
 import BoilIcon from '../../assets/img/boil-icon.png';
@@ -21,6 +20,7 @@ import RecentPrevIcon from '../../assets/img/dashboard-rating-prev-icon.png';
 import RecentNextIcon from '../../assets/img/dashboard-rating-next-icon.png';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
+import UserAvatar from '../../components/UserAvatar';
 import './style.scss';
 
 export default class DashboardPage extends React.Component {
@@ -32,10 +32,7 @@ export default class DashboardPage extends React.Component {
 			<div className={'dashboard-page'}>
 				<Navbar current="Dashboard" />
 				<div className={'main-panel'}>
-					<div className={'user-avatar'}>
-						<img className={'user-avatar-img'} src={UserImg} />
-						<div>Jon Snow</div>
-					</div>
+					<UserAvatar avatar={UserImg} name="Jon Snow" />
 					<div className={'header'}>
 						<div className={'header-deals'}>ACTIVE DEALS</div>
 						<div className={'add-more-deals-button'}>

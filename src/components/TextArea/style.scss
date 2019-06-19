@@ -1,15 +1,17 @@
-  .input-text {
+  .text-area {
     margin-top: 5px;
+    margin-right: 6px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 
-    input {
+    textarea {
       width: calc(100% - 34px);
       margin: 13px 17px;
       border: none;
+      height: 70px;
     }
 
-    input:focus {
+    textarea:focus {
       outline: none;
     }
   }

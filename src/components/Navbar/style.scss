@@ -7,7 +7,9 @@
   height: 100%;
   font-family: 'Avenir Next';
   text-align: left;
-
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7px;
   &-logo {
     margin-left: 80px;
     width: 110px;
@@ -46,7 +48,8 @@
   .copyright{
     color: white;
     text-align: center;
-    margin-top: 905px;
+    margin-top: auto;
+    margin-bottom: 35px;
     margin-left: 40px;
     font-size: .7em;
   }
