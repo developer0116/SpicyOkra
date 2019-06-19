@@ -7,6 +7,7 @@ import RestaurantPage from './pages/restaurant';
 import DashboardPage from './pages/dashboard';
 import DealsPage from './pages/deals';
 import ExperiencesPage from './pages/experiences';
+import SettingsPage from './pages/settings';
 
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
 				<Route exact path="/dashboard" component={DashboardPage} />
 				<Route exact path="/deals" component={DealsPage} />
 				<Route exact path="/experiences" component={ExperiencesPage} />
+				<Route exact path="/settings" component={SettingsPage} />
 			</div>
 		</Router>
 	);
