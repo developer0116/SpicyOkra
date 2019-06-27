@@ -14,7 +14,7 @@ export default class RestaurantPage extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className={'main-panel'}>
+				<div className={'restaurant-main-panel'}>
 					<Topbar />
 
 					<div className={'main-panel-img2'}>

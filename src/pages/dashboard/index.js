@@ -21,11 +21,25 @@ import RecentNextIcon from '../../assets/img/dashboard-rating-next-icon.png';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import UserAvatar from '../../components/UserAvatar';
+import HistoryChart from '../../components/HistoryChart';
 import './style.scss';
 
 export default class DashboardPage extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			historyChartWidth: 406
+		};
+	}
+
+	onResizeWindow() {
+		this.setState({
+			historyChartWidth: document.getElementById('history-chart').getBoundingClientRect().width
+		});
+	}
+	componentDidMount() {
+		this.onResizeWindow();
+		window.addEventListener('resize', this.onResizeWindow.bind(this));
 	}
 	render() {
 		return (
@@ -128,7 +142,9 @@ export default class DashboardPage extends React.Component {
 										</div>
 									</div>
 								</div>
-								<div className={'third-two'} />
+								<div className={'third-two deals-redeemed-history'}>
+									<HistoryChart width={this.state.historyChartWidth} />
+								</div>
 							</div>
 						</div>
 					</div>
