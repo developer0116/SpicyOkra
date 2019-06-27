@@ -4,6 +4,7 @@
   font-family: 'Avenir Next';
   display: flex;
   color: #4a4a4a;
+
   .main-panel {
     width: 100%;
     height: 100%;
@@ -15,16 +16,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
-    .user-account{
+
+    .user-account {
       right: 40px;
     }
-    &-back{
+
+    &-back {
       margin-left: auto;
-      &Img{
+
+      &Img {
         height: 100%;
       }
     }
-    .review-form{
+
+    .review-form {
       background-color: white;
       position: absolute;
       left: 345px;
@@ -36,62 +41,150 @@
       padding-right: 46px;
       text-align: left;
       overflow: auto;
-      .experiences-timeline{
+
+      .experiences-timeline {
         margin-left: 46px;
-        img{
+
+        img {
           width: 100%;
         }
       }
-      &-heading{
+
+      &-heading {
         font-weight: bold;
         font-size: 1.5em;
         margin-top: 23px;
         margin-left: 46px;
       }
-      &-footer{
+
+      &-footer {
         display: flex;
         margin-left: 46px;
         margin-top: -10px;
-        .back-button{
+
+        .back-button {
           margin-right: 30px;
         }
       }
-      &-title{
+
+      &-title {
         font-weight: bold;
         font-size: .97em;
         margin-left: 3px;
         margin-top: 18px;
-        &-desc{
+
+        &-desc {
           margin-left: 45px;
           margin-top: 0px;
           font-size: .93em;
           line-height: 1.58em;
         }
       }
-      &-back{
+
+      &-back {
         width: 450px;
-        height: 470px;
-        background-image: url('../../assets/img/experiences-phones.png');
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position: 100%;
+        height: 420px;
+        margin-left: 76px;
+        margin-top: 50px;
+        overflow: auto;
+        .free-appetizer {
+          padding-right: 10px;
+          width: 70%;
+          text-align: left;
+
+          &-img {
+            width: 100%;
+            height: 140px;
+          }
+
+          &-content {
+            margin-top: -5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            background-color: white;
+            border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+
+            .london-bridge-restaurant {
+              border-radius: 5px;
+              border: 1px solid rgb(151, 151, 151);
+              padding: 11px;
+              margin-top: 8px;
+              display: flex;
+
+              &-logo {
+                width: 2.0em;
+                height: 2.0em;
+              }
+
+              &-content {
+                margin-right: -30px;
+                width: 100%;
+                margin-left: 11px;
+              }
+
+              &-heading {
+                font-weight: bolder;
+                font-size: .82em;
+              }
+
+              &-detail {
+                font-size: .71em;
+              }
+
+              &-cook {
+                background-color: white;
+                border: 1px solid #979797;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                right: -25px;
+                top: 25px;
+                position: relative;
+
+                img {
+                  margin: 5px;
+                }
+              }
+
+            }
+          }
+
+          &-heading {
+            font-weight: bolder;
+            font-size: 1.06em;
+
+          }
+
+          &-footer {
+            background-color: white;
+            padding: 20px;
+            padding-top: 22px;
+            padding-bottom: 23px;
+            display: flex;
+          }
+        }
       }
-      &-description{
+
+      &-description {
         margin-top: 40px;
         margin-left: 46px;
         font-size: .95em;
       }
-      &-divider{
+
+      &-divider {
         margin-top: 10px;
-        img{
+
+        img {
           width: 100%;
         }
       }
-      .finish-button{
-        background-color:#74C145;
+
+      .finish-button {
+        background-color: #74C145;
         width: 100%;
         height: 50px;
-        border-radius: 5px; 
+        border-radius: 5px;
         color: white;
         text-align: center;
         margin-top: 30px;
@@ -99,14 +192,16 @@
         line-height: 3.7em;
         cursor: pointer;
       }
-      .finish-button:hover{
+
+      .finish-button:hover {
         opacity: 0.7;
       }
-      .back-button{
-        background-color:#ebebeb;
+
+      .back-button {
+        background-color: #ebebeb;
         width: 100%;
         height: 50px;
-        border-radius: 5px; 
+        border-radius: 5px;
         color: #4a4a4a;
         text-align: center;
         margin-top: 30px;
@@ -114,7 +209,8 @@
         line-height: 3.7em;
         cursor: pointer;
       }
-      .back-button:hover{
+
+      .back-button:hover {
         opacity: 0.7;
       }
     }

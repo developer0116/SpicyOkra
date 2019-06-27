@@ -111,6 +111,8 @@
           padding-top: 22px;
           padding-bottom: 23px;
           display: flex;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
       }
       .deals-redeemed{
@@ -131,6 +133,8 @@
         &-content{
           height: auto;
           background-color: white;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
         &-heading{
           font-weight: bold;
