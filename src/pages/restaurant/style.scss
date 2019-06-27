@@ -1,19 +1,43 @@
 /**/
-.main-panel{
+.main-panel {
   background-color: #F6242D;
   height: 1140px;
-  &-img1{
-    margin-right: 55px;    
+  background-image: url(/static/media/home_6.59674cf9.png);
+  background-position: 104% 0%;
+  background-repeat: no-repeat;
+
+  &-img1 {
+    margin-right: 55px;
   }
-  &-img2{
-    position: absolute;
-    right: 110px;
-    top: 140px;
+
+  &-img2 {
+    margin-left: auto;
+    padding-top: 140px;
+    margin-right: 110px;
     width: 600px;
     height: 955px;
-    img{
+
+    img {
       width: 100%;
       height: 100%;
     }
   }
+
+  .panel-1-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -238px;
+    top: -64px;
+    background-color: #C71E1E;
+    border-radius: 35px;
+    -ms-transform: rotate(-13deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-13deg);
+    /* Safari prior 9.0 */
+    transform: rotate(-13deg);
+    /* Standard syntax */
+  }
+
+  
 }
