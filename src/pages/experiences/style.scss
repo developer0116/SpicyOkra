@@ -34,7 +34,8 @@
       position: absolute;
       left: 345px;
       top: 35px;
-      width: 610px;
+      min-width: 610px;
+      width: 46%;
       height: 855px;
       padding-top: 43px;
       padding-left: 0px;
@@ -82,7 +83,6 @@
       }
 
       &-back {
-        width: 450px;
         height: 420px;
         margin-left: 76px;
         margin-top: 50px;
