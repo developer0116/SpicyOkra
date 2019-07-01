@@ -14,7 +14,13 @@ import PencilIcon from '../../assets/img/pencil-icon.png';
 import PowerIcon from '../../assets/img/power-icon.png';
 
 const Navbar2 = (props) => {
-	const leftIcons = [ DashboardIcon, DealsIcon, ExperiencesIcon, SettingsIcon, SupportIcon ];
+	const leftlinks = [
+		{ icon: DashboardIcon, url: '/dashboard' },
+		{ icon: DealsIcon, url: '/deals' },
+		{ icon: ExperiencesIcon, url: '/experiences' },
+		{ icon: SettingsIcon, url: '/settings' },
+		{ icon: SupportIcon, url: '/support' }
+	];
 	const links = [
 		{
 			name: 'User Profile',
@@ -40,19 +46,23 @@ const Navbar2 = (props) => {
 	return (
 		<div className={'navbar2'}>
 			<div className={'navbar2-left'}>
-				<div className={'navbar2-logo'}>
-					<img src={Logo} />
-				</div>
+				<a href="/">
+					<div className={'navbar2-logo'}>
+						<img src={Logo} />
+					</div>
+				</a>
 				<div className={'navbar2-left-content'}>
-					{leftIcons.map((icon, index) => {
+					{leftlinks.map((link, index) => {
 						return (
-							<div
-								className={
-									index === 3 ? 'navbar2-left-link navbar2-left-link-active' : 'navbar2-left-link'
-								}
-							>
-								<img src={icon} />
-							</div>
+							<a href={link.url}>
+								<div
+									className={
+										index === 3 ? 'navbar2-left-link navbar2-left-link-active' : 'navbar2-left-link'
+									}
+								>
+									<img src={link.icon} />
+								</div>
+							</a>
 						);
 					})}
 				</div>

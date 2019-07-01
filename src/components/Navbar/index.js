@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+
 import Logo from '../../assets/img/dashboard-logo.png';
 import DashboardIcon from '../../assets/img/dashboard-icon.png';
 import DealsIcon from '../../assets/img/deals-icon.png';
@@ -10,42 +11,52 @@ const Navbar = (props) => {
 	const links = [
 		{
 			name: 'Dashboard',
-			icon: DashboardIcon
+			icon: DashboardIcon,
+			url: '/dashboard'
 		},
 		{
 			name: 'Deals',
-			icon: DealsIcon
+			icon: DealsIcon,
+			url: '/deals'
 		},
 		{
 			name: 'Experiences',
-			icon: ExperiencesIcon
+			icon: ExperiencesIcon,
+			url: '/experiences'
 		},
 		{
 			name: 'Account Settings',
-			icon: SettingsIcon
+			icon: SettingsIcon,
+			url: '/settings'
 		},
 		{
 			name: 'Support',
-			icon: SupportIcon
+			icon: SupportIcon,
+			url: '/support'
 		}
 	];
 	return (
 		<div className={'navbar'}>
 			<div>
-				<div className={'navbar-logo'}>
-					<img src={Logo} />
-				</div>
+				<a href="/">
+					<div className={'navbar-logo'}>
+						<img src={Logo} />
+					</div>
+				</a>
+
 				<div className={'navbar-content'}>
 					{links.map((link) => {
 						return (
-							<div
-								className={
-									props.current === link.name ? 'navbar-link navbar-link-active' : 'navbar-link'
-								}
-							>
-								<img src={link.icon} />
-								<div>{link.name}</div>
-							</div>
+							<a href={link.url}>
+								<div
+									className={
+										props.current === link.name ? 'navbar-link navbar-link-active' : 'navbar-link'
+									}
+								>
+									<img src={link.icon} />
+									<div>{link.name}</div>
+								</div>
+							</a>
 						);
 					})}
 				</div>

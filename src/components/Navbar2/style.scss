@@ -6,26 +6,43 @@
   display: flex;
   padding-bottom: 7px;
   height: calc(100% + 40px);
-  &-left{
+
+  &-left {
     background-color: #F6242D;
     width: 90px;
     height: 100%;
-    &-content{
+
+    &-content {
       margin-top: 77px;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+      }
     }
-    &-link{
+
+    &-link {
       margin-bottom: 14.3px;
       display: flex;
       margin-right: 10px;
-      img{
+
+      img {
         padding-top: 13px;
         padding-bottom: 13px;
-        
+
         width: 20px;
         height: 20px;
         margin-left: 35px;
       }
-      &-active{
+
+      &:hover {
+        background-color: rgb(223, 33, 33);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      &-active {
 
         background-color: #C71E1E;
         border-top-right-radius: 20px;
@@ -33,15 +50,18 @@
       }
     }
   }
+
   &-logo {
     margin-left: 23px;
     width: 44px;
     margin-top: 32px;
+
     img {
       width: 100%;
     }
   }
-  &-right{
+
+  &-right {
     background-color: #514D4D;
     color: white;
     height: 100%;
@@ -49,10 +69,11 @@
     display: flex;
     flex-direction: column;
 
-    &-content{
+    &-content {
       margin-top: 140px;
     }
-    &-link{
+
+    &-link {
       cursor: pointer;
       margin-top: 14px;
       display: flex;
@@ -63,21 +84,32 @@
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
       margin-right: 17px;
-      img{
+
+      img {
         width: 17px;
         height: 17px;
       }
-      &-active{
+
+      &:hover {
+        padding-left: 28px;
+        border-left: 5px solid white;
+        background-color: rgb(85, 83, 83);
+        font-weight: bold;
+      }
+
+      &-active {
         padding-left: 28px;
         border-left: 5px solid white;
         background-color: #3C3939;
         font-weight: bold;
       }
-      &-text{
+
+      &-text {
         margin-left: 20px;
       }
     }
-    .logout-button{
+
+    .logout-button {
       display: flex;
       padding: 15px 31px 10px 50px;
       width: 110px;
@@ -87,19 +119,21 @@
       border-radius: 5px;
       border: 1px solid white;
       cursor: pointer;
-      img{
+
+      img {
         width: 16px;
         height: 16px;
         margin-top: 1px;
       }
-      &-text{
+
+      &-text {
         color: white;
         font-size: .9em;
         margin-left: 10px;
       }
 
     }
-    
+
   }
- 
+
 }
