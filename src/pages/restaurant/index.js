@@ -17,7 +17,7 @@ export default class RestaurantPage extends React.Component {
 				<div className={'restaurant-main-panel'}>
 					<Topbar />
 
-					<div className={'main-panel-img2'}>
+					<div className={'restaurant-main-panel-img2'}>
 						<img src={RestaurantImg2} />
 					</div>
 					<div className={'panel-1-2'} />
