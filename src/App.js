@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+import 'antd/dist/antd.css';
 import logo from './logo.svg';
 import HomePage from './pages/home';
 import RestaurantPage from './pages/restaurant';
