@@ -7,7 +7,7 @@
     "@aws-amplify/pubsub": "^1.1.0",
     "antd": "^3.22.2",
     "d3": "^5.9.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-render-html": "^0.6.0",
